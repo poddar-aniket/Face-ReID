@@ -1,0 +1,14 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+config/config.yaml
+data/lfw/
+data/raw/
+*.onnx
+.insightface/
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/

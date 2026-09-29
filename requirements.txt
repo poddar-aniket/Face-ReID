@@ -1,0 +1,8 @@
+insightface
+onnxruntime-gpu
+numpy
+opencv-python
+scikit-learn
+streamlit
+Pillow
+matplotlib

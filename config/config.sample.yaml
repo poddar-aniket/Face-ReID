@@ -1,0 +1,3 @@
+similarity_threshold: 0.40
+db_path: "data/faces.db"
+embedding_dim: 512
