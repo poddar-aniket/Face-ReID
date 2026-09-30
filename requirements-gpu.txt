@@ -1,0 +1,9 @@
+# GPU variant (tested on RTX 3050, Windows). Never install alongside onnxruntime.
+insightface
+onnxruntime-gpu[cuda,cudnn]
+numpy
+opencv-python
+scikit-learn
+streamlit
+Pillow
+matplotlib
