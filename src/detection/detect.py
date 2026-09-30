@@ -24,6 +24,14 @@ def get_face_app() -> FaceAnalysis:
     """Load the InsightFace model once and return the shared instance."""
     global _app
     if _app is None:
+        # With onnxruntime-gpu[cuda,cudnn], load the CUDA/cuDNN DLLs shipped in the
+        # nvidia pip packages. Harmless on CPU-only installs.
+        if hasattr(ort, "preload_dlls"):
+            try:
+                ort.preload_dlls(directory="")
+            except Exception as exc:
+                print(f"[detect] preload_dlls skipped: {exc}")
+
         available = ort.get_available_providers()
         providers = []
         if "CUDAExecutionProvider" in available:
