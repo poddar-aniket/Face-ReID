@@ -1,5 +1,7 @@
+# Requires Python 3.10 or 3.11 (insightface does not install on 3.12+)
 insightface
-onnxruntime-gpu
+onnxruntime
+# For GPU inference use requirements-gpu.txt instead
 numpy
 opencv-python
 scikit-learn
