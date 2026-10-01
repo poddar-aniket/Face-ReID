@@ -12,3 +12,7 @@ data/raw/
 .DS_Store
 .idea/
 .vscode/
+outputs/*
+!outputs/calibration/
+outputs/calibration/*
+!outputs/calibration/metrics.json
