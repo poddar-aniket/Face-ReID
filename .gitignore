@@ -16,3 +16,4 @@ outputs/*
 !outputs/calibration/
 outputs/calibration/*
 !outputs/calibration/metrics.json
+data/*.db
